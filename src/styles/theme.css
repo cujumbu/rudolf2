@@ -1,0 +1,29 @@
+/* Rudolf Theme Colors */
+@layer base {
+  :root {
+    --color-rudolf-red: #D42D27;
+    --color-rudolf-nose: #FF4136;
+    --color-pine: #2F4538;
+    --color-snow: #F8F9FC;
+    --color-frost: #E8ECF3;
+    --color-nordic-blue: #4A6FA5;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#D42D27] hover:bg-[#B82520] text-white font-medium px-4 py-2 rounded-md transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#4A6FA5] hover:bg-[#3D5C8C] text-white font-medium px-4 py-2 rounded-md transition-colors;
+  }
+
+  .input-primary {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4A6FA5] focus:ring focus:ring-[#4A6FA5] focus:ring-opacity-50;
+  }
+}
+
+.rudolf-gradient {
+  background: linear-gradient(135deg, #2F4538 0%, #4A6FA5 100%);
+}
